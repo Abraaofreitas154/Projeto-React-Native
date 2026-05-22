@@ -8,23 +8,7 @@ import {
   ScrollView
 } from 'react-native';
 
-import { useEffect } from 'react';
-
 export default function App() {
-
-  const API_KEY = 'SUA_API_KEY';
-
-  useEffect(() => {
-
-    fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=pt-BR`
-    )
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-      });
-
-  }, []);
 
   return (
 
@@ -32,13 +16,11 @@ export default function App() {
 
       <ScrollView showsVerticalScrollIndicator={false}>
 
-        {/* LOGO */}
         <View style={styles.logoContainer}>
           <Text style={styles.logo}>Tela</Text>
           <Text style={styles.logo1}>Viva</Text>
         </View>
 
-        {/* HEADER */}
         <View style={styles.header}>
 
           <Text style={styles.h1}>
@@ -53,7 +35,6 @@ export default function App() {
 
         </View>
 
-        {/* FILMES POPULARES */}
         <Text style={styles.filmespopulares}>
           Filmes Populares
         </Text>
@@ -64,57 +45,53 @@ export default function App() {
           style={styles.listaHorizontal}
         >
 
-          {/* FILME 1 */}
           <TouchableOpacity style={styles.card}>
 
             <Image
               source={{
-                uri: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg'
+                uri: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
               }}
               style={styles.poster}
             />
 
             <Text style={styles.nomeFilme}>
-              Batman: O Cavaleiro das Trevas
+              Batman:O Cavaleiro das Trevas
             </Text>
 
           </TouchableOpacity>
 
-          {/* FILME 2 */}
           <TouchableOpacity style={styles.card}>
 
             <Image
               source={{
-                uri: 'https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg'
+                uri: 'https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg',
               }}
               style={styles.poster}
             />
 
             <Text style={styles.nomeFilme}>
-              Seven
+              Seven- Os Sete Crimes Capitais
             </Text>
 
           </TouchableOpacity>
 
-          {/* FILME 3 */}
           <TouchableOpacity style={styles.card}>
 
             <Image
               source={{
-                uri: 'https://image.tmdb.org/t/p/w500/knEIz1eNGl5MQDbrEAVWA7iRqF9.jpg'
+                uri: 'https://image.tmdb.org/t/p/w500/knEIz1eNGl5MQDbrEAVWA7iRqF9.jpg',
               }}
               style={styles.poster}
             />
 
             <Text style={styles.nomeFilme}>
-              Olhos Bem Fechados
+              De Olhos Bem Fechados
             </Text>
 
           </TouchableOpacity>
 
         </ScrollView>
 
-        {/* EM ALTA */}
         <Text style={styles.tituloEmAlta}>
           Em Alta
         </Text>
@@ -125,44 +102,41 @@ export default function App() {
           style={styles.listaHorizontal}
         >
 
-          {/* FILME 1 */}
           <TouchableOpacity style={styles.card}>
 
             <Image
               source={{
-                uri: 'https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg'
+                uri: 'https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg',
               }}
               style={styles.poster}
             />
 
             <Text style={styles.nomeFilme}>
-              Vingadores
+              Vingadores Endgame
             </Text>
 
           </TouchableOpacity>
 
-          {/* FILME 2 */}
           <TouchableOpacity style={styles.card}>
 
             <Image
               source={{
-                uri: 'https://image.tmdb.org/t/p/w500/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg'
+                uri: 'https://image.tmdb.org/t/p/w500/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg',
               }}
               style={styles.poster}
             />
 
             <Text style={styles.nomeFilme}>
-              Velozes e Furiosos 2
+              Mortal Kombat
             </Text>
 
           </TouchableOpacity>
 
-          {/* FILME 3 */}
           <TouchableOpacity style={styles.card}>
 
             <Image
               source={{
-                uri: 'https://image.tmdb.org/t/p/w500/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg'
+                uri: 'https://image.tmdb.org/t/p/w500/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg',
               }}
               style={styles.poster}
             />
@@ -175,7 +149,6 @@ export default function App() {
 
         </ScrollView>
 
-        {/* MENU */}
         <View style={styles.menu}>
 
           <TouchableOpacity>
