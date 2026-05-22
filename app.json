@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "TelaViva",
+    "slug": "TelaViva",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo_telaviva.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo_telaviva",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo_telaviva",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
